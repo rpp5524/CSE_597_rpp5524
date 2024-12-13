@@ -22,12 +22,17 @@ This paper proposes a Transformer neural architecture, dubbed <b>GRIT</b> (Grid-
 * PyTorch >= 1.12.0, torchvision >= 0.6.1
 * Other packages: pycocotools, tensorboard, tqdm, h5py, nltk, einops, hydra, spacy, and timm
 
-* First, clone the repository locally:
+
+Clone my repository first
 ```shell
-git clone https://github.com/davidnvq/grit.git
-cd grit
+git clone git@github.com:rpp5524/CSE_597_rpp5524.git
 ```
-* Then, create an environment and install PyTorch and torchvision:
+```shell
+cd CSE_597_rpp5524/grit
+```
+
+Feel free to use the Jupyter notebook alternatively.
+Create an environment and install PyTorch and torchvision:
 ```shell
 conda create -n grit python=3.9
 conda activate grit
