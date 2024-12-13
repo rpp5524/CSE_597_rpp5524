@@ -1,7 +1,7 @@
 # CSE_597_rpp5524
 This is a github repository for CSE 597 Final Project
 
-## GRIT: Faster and Better Image captioning Transformer (ECCV 2022)
+## GRIT: Faster and Better Image captioning Transformer (ECCV 2023)
 
 This is the code implementation for the paper titled: "GRIT: Faster and Better Image-captioning Transformer Using Dual Visual Features" (Accepted to ECCV 2022) [[Arxiv](https://arxiv.org/abs/2207.09666)].
 
