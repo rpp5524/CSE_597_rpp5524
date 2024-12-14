@@ -6,15 +6,6 @@ This is a github repository for CSE 597 Final Project
 This is the code implementation for the paper titled: "GRIT: Faster and Better Image-captioning Transformer Using Dual Visual Features" (Accepted to ECCV 2022) [[Arxiv](https://arxiv.org/abs/2207.09666)].
 
 
-## Introduction
-
-This paper proposes a Transformer neural architecture, dubbed <b>GRIT</b> (Grid- and Region-based Image captioning Transformer), that effectively utilizes the two visual features to generate better captions. GRIT replaces the CNN-based detector employed in previous methods with a DETR-based one, making it computationally faster.
-
-
-<div align=center>  
-<img src='.github/grit.png' width="100%">
-</div>
-
 ## Installation
 
 ### Requirements
