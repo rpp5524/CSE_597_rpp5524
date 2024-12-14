@@ -82,6 +82,10 @@ export DATA_ROOT=path/to/coco_dataset
 python train_caption.py exp.name=caption_4ds optimizer.freezing_xe_epochs=10 optimizer.freezing_sc_epochs=10 optimizer.finetune_xe_epochs=0 optimizer.finetune_sc_epochs=0 optimizer.freeze_backbone=True optimizer.freeze_detector=True
 ```
 
+## Checkpoints
+**git was not letting me push large files into my repository so i am including my drive link where the checkpoint file is**
+[Checkpoint file](https://drive.google.com/drive/folders/1h4oSBtdADbdCBpVznYB4jiir_X1AMmh7?usp=sharing)
+
 ### Evaluation
 
 The evaluation will be run on a single GPU.
