@@ -88,13 +88,7 @@ python train_caption.py exp.name=caption_4ds
 Then we can run the following script to train the model:
 ```shell
 export DATA_ROOT=path/to/coco_dataset
-python train_caption.py exp.name=caption_4ds \
-optimizer.freezing_xe_epochs=10 \
-optimizer.freezing_sc_epochs=10 \
-optimizer.finetune_xe_epochs=0 \
-optimizer.finetune_sc_epochs=0 \
-optimizer.freeze_backbone=True \
-optimizer.freeze_detector=True
+python train_caption.py exp.name=caption_4ds optimizer.freezing_xe_epochs=10 optimizer.freezing_sc_epochs=10 optimizer.finetune_xe_epochs=0 optimizer.finetune_sc_epochs=0 optimizer.freeze_backbone=True optimizer.freeze_detector=True
 ```
 
 ### Evaluation
@@ -103,20 +97,9 @@ The evaluation will be run on a single GPU.
 * Evaluation on **Karapthy splits**:
 ```shell
 export DATA_ROOT=path/to/coco_caption
-# evaluate on the validation split
 python eval_caption.py +split='valid' exp.checkpoint=path_to_caption_checkpoint
 
-# evaluate on the test split
 python eval_caption.py +split='test' exp.checkpoint=path_to_caption_checkpoint
-```
-* Evaluation on the **online splits**:
-```shell
-export DATA_ROOT=path/to/coco_caption
-# evaluate on the validation split
-python eval_caption_online.py +split='valid' exp.checkpoint=path_to_caption_checkpoint
-
-# evaluate on the test split
-python eval_caption_online.py +split='test' exp.checkpoint=path_to_caption_checkpoint
 ```
 
 ### Inference on RGB Image
